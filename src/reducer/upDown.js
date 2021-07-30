@@ -6,3 +6,5 @@ const changeNumber = (state = initalState, action) =>{
       default: return state
   }
 }
+
+export default changeNumber;
