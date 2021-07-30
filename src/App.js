@@ -5,7 +5,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello React-Redux</h1>
+         <div className="quantity">
+           <a className="btn-cm decrement" title="decrement"><span>-</span></a>
+           <input type="number" name="quantity" value="0" min="0" max="10" className="values"/>
+           <a className="btn-cm increment" title="increment"><span>+</span></a>
+         </div>
       </header>
     </div>
   );
