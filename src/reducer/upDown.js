@@ -1,8 +1,11 @@
-const initalState = 0;
+const initalState = 10;
 const changeNumber = (state = initalState, action) =>{
   switch(action.type){
-      case "INCREMENT": return state + 1 
+
+      case "INCREMENT": return state + action.payload 
+
       case "DECREMENT" : return state - 1
+
       default: return state
   }
 }
